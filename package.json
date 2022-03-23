@@ -19,6 +19,33 @@
 				"command": "sample-ext.helloWorld",
 				"title": "Hello World"
 			}
+		],
+		"configuration": [
+			{
+				"title": "Sample Configuration",
+				"properties": {
+					"ProjectName": {
+						"type": "string",
+						"default": "",
+						"description": "Enter any customized name",
+						"order": 0
+					},
+					"ProjectDescriptionFile": {
+						"type": "string",
+						"default": "",
+						"description": "A relative path starts with backward or forward slash",
+						"pattern": "^(\\\\|/)+[a-zA-z0-9\\s_@\\-^!#$%&+={}[\\]/]+\\.dsc",
+						"order": 1
+					},
+					"ProjectInformationFile": {
+						"type": "string",
+						"default": "",
+						"description": "A relative path starts with backward or forward slash",
+						"pattern": "^(\\\\|/)+[a-zA-z0-9\\s_@\\-^!#$%&+={}[\\]/]+\\.(ini|cfg)",
+						"order": 2
+					}
+				}
+			}
 		]
 	},
 	"scripts": {
